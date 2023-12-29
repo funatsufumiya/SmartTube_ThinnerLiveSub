@@ -21,7 +21,8 @@ public class ChatItemMessage implements IMessage {
         ChatItemMessage message = new ChatItemMessage();
         message.mId = chatItem.getId();
         if (chatItem.getMessage() != null && !chatItem.getMessage().trim().isEmpty()) {
-            message.mText = TextUtils.concat(Utils.bold(chatItem.getAuthorName()), ": ", chatItem.getMessage());
+            // message.mText = TextUtils.concat(Utils.bold(chatItem.getAuthorName()), ": ", chatItem.getMessage());
+            message.mText = TextUtils.concat(chatItem.getMessage());
         }
         message.mAuthor = ChatItemAuthor.from(chatItem);
         message.mCreatedAt = new Date();

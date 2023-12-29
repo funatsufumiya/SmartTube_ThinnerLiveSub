@@ -54,6 +54,8 @@ public class ChatPreferenceDialogFragment extends LeanbackPreferenceDialogFragme
         final CharSequence title = mDialogTitle;
         if (!TextUtils.isEmpty(title)) {
             final TextView titleView = (TextView) view.findViewById(R.id.decor_title);
+            // set text color to white semi transparent
+            // titleView.setTextColor(0x80ffffff);
             titleView.setText(title);
         }
 
