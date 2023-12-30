@@ -16,7 +16,7 @@
     <color name="light_grey">#E4E4E4</color>
     <color name="leanback">#0096A6</color>
     <color name="semi_transparent">#64000000</color>
-    <color name="live_chat_bg">#10000000</color>
+    <color name="live_chat_bg">#00000000</color>
     <color name="live_chat_fg">#d0ffffff</color>
     <color name="semi_grey">#64282828</color>
     <color name="grey">#282828</color>
