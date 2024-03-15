@@ -1,4 +1,4 @@
-# ハック手順
+## ハック手順
 
 (以降のバージョンを追従するために必要)
 
@@ -12,6 +12,16 @@
 - `export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-14.jdk/Contents/Home`
 - `./gradlew installStorigDebug`
 - 最後に `./gradlew clean` して、`rm -rf ~/Library/Android/` して、Android Studioを消す。
+
+## 余談
+
+- iPhoneのAltStore版は、YTLite。
+https://github.com/dayanch96/YTLite/releases
+
+下記記事がわかりやすい。
+https://note.com/tiyoko2525/n/n99ff7a725a0d
+
+---
 
 # SmartTube (old name SmartTubeNext)
   
