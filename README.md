@@ -48,7 +48,7 @@ https://github.com/dayanch96/YTLite/releases
 
 ---
 
-Original README.md below
+Original README.md below: (see latest on https://github.com/yuliskov/SmartTube)
 
 ---
 
