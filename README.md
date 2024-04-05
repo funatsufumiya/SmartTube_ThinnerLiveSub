@@ -1,12 +1,14 @@
+ライブ配信の字幕を薄くして観やすくしたバージョン。移行のバージョンにも下記手順により対応可能。
+
 ## ハック手順
 
 (以降のバージョンを追従するために必要)
 
-- `adb connect 192.168.0.117:5555`
-    - ちなみに正式版は、`adb install /Users/fu/Downloads/SmartTube_stable_21.34_armeabi-v7a.apk` などでインストール。arm64 (v8)版ではなく32bit (v7) 版。
+- `adb connect 192.168.0.xxx:5555`
+    - ちなみに正式版は、`adb install ~/Downloads/SmartTube_stable_21.34_armeabi-v7a.apk` などでインストール。arm64 (v8)版ではなく32bit (v7) 版。
 - Android Studioをインストール
     - Android SDKだけをインストール。
-    - `local.properties` の中身: `sdk.dir=/Users/fu/Library/Android/sdk/`
+    - `local.properties` の中身: `sdk.dir=~/Library/Android/sdk/`
 - `git diff master` で変更点を確認。
 - 変更点を反映したら、`git --no-pager diff --name-only` で、png等をコピー
 - `export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-14.jdk/Contents/Home`
