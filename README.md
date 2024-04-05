@@ -1,4 +1,4 @@
-# SmartTubeNext with thinner live subtitles
+# SmartTube with thinner live subtitles
 
 ![screeenshot](screenshot.png)
 
