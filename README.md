@@ -13,7 +13,7 @@ ja
 ## en: Patching procedure for subsequent versions
 
 - `adb connect 192.168.0.xxx:5555`
-  - By the way, the official version is installed with `adb install ~/Downloads/SmartTube_stable_21.34_armeabi-v7a.apk`, etc. Install the 32-bit (v7) version, not the arm64 (v8) version.
+  - By the way, the official version is installed with `adb install ~/Downloads/SmartTube_stable_21.34_armeabi-v7a.apk`, etc. (Install the 32-bit (v7) version, not the arm64 (v8) version for FireTV.)
 - Install Android Studio
   - Install only Android SDK.
   - Contents of `local.properties`: `sdk.dir=~/Library/Android/sdk/`
@@ -26,7 +26,7 @@ ja
 ## ja: 以降のバージョンに対するパッチ手順
 
 - `adb connect 192.168.0.xxx:5555`
-    - ちなみに正式版は、`adb install ~/Downloads/SmartTube_stable_21.34_armeabi-v7a.apk` などでインストール。arm64 (v8)版ではなく32bit (v7) 版。
+    - ちなみに正式版は、`adb install ~/Downloads/SmartTube_stable_21.34_armeabi-v7a.apk` などでインストール。(FireTVは arm64 (v8)版ではなく32bit (v7) 版。)
 - Android Studioをインストール
     - Android SDKだけをインストール。
     - `local.properties` の中身: `sdk.dir=~/Library/Android/sdk/`
