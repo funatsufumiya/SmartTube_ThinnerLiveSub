@@ -4,13 +4,13 @@
 
 en
 
-- A version of the live feed with thinner subtitles for easier viewing. Subsequent versions can also be supported by following the procedure below.
+- A version of the live feed with thinner subtitles for easier viewing. Subsequent versions after 20.26 can also be supported by following the procedure below.
 
 ja
 
-- ライブ配信の字幕を薄くして観やすくしたバージョン。以降のバージョンにも下記手順により対応可能。
+- ライブ配信の字幕を薄くして観やすくしたバージョン。20.26以降のバージョンにも下記手順により対応可能。
 
-## en: Patching procedure for subsequent versions
+## en: Patching procedure for subsequent versions after 20.26
 
 - `adb connect 192.168.0.xxx:5555`
   - By the way, the official version is installed with `adb install ~/Downloads/SmartTube_stable_21.34_armeabi-v7a.apk`, etc. (Install the 32-bit (v7) version, not the arm64 (v8) version for FireTV.)
@@ -23,7 +23,7 @@ ja
 - `./gradlew installStorigDebug`
 - Finally, `./gradlew clean`, `rm -rf ~/Library/Android/`, and delete Android Studio.
 
-## ja: 以降のバージョンに対するパッチ手順
+## ja: 20.26以降のバージョンに対するパッチ手順
 
 - `adb connect 192.168.0.xxx:5555`
     - ちなみに正式版は、`adb install ~/Downloads/SmartTube_stable_21.34_armeabi-v7a.apk` などでインストール。(FireTVは arm64 (v8)版ではなく32bit (v7) 版。)
