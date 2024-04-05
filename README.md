@@ -1,6 +1,31 @@
-ライブ配信の字幕を薄くして観やすくしたバージョン。移行のバージョンにも下記手順により対応可能。
+# SmartTubeNext with thinner live subtitles
 
-## ハック手順
+![screeenshot](screenshot.png)
+
+en
+
+- A version of the live feed with thinner subtitles for easier viewing. Subsequent versions can also be supported by following the procedure below.
+
+ja
+
+- ライブ配信の字幕を薄くして観やすくしたバージョン。以降のバージョンにも下記手順により対応可能。
+
+## en: Modifying procedure
+
+(to keep up with subsequent versions)
+
+- `adb connect 192.168.0.xxx:5555`
+  - By the way, the official version is installed with `adb install ~/Downloads/SmartTube_stable_21.34_armeabi-v7a.apk`, etc. Install the 32-bit (v7) version, not the arm64 (v8) version.
+- Install Android Studio
+  - Install only Android SDK.
+  - Contents of `local.properties`: `sdk.dir=~/Library/Android/sdk/`
+- Check the changes with `git diff master`.
+- After reflecting the changes, copy png etc. with `git --no-pager diff --name-only`.
+- `export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-14.jdk/Contents/Home`
+- `./gradlew installStorigDebug`
+- Finally, `./gradlew clean`, `rm -rf ~/Library/Android/`, and delete Android Studio.
+
+## ja: 修正手順
 
 (以降のバージョンを追従するために必要)
 
