@@ -10,9 +10,7 @@ ja
 
 - ライブ配信の字幕を薄くして観やすくしたバージョン。以降のバージョンにも下記手順により対応可能。
 
-## en: Modifying procedure
-
-(to keep up with subsequent versions)
+## en: Patching procedure for subsequent versions
 
 - `adb connect 192.168.0.xxx:5555`
   - By the way, the official version is installed with `adb install ~/Downloads/SmartTube_stable_21.34_armeabi-v7a.apk`, etc. Install the 32-bit (v7) version, not the arm64 (v8) version.
@@ -25,9 +23,7 @@ ja
 - `./gradlew installStorigDebug`
 - Finally, `./gradlew clean`, `rm -rf ~/Library/Android/`, and delete Android Studio.
 
-## ja: 修正手順
-
-(以降のバージョンを追従するために必要)
+## ja: 以降のバージョンに対するパッチ手順
 
 - `adb connect 192.168.0.xxx:5555`
     - ちなみに正式版は、`adb install ~/Downloads/SmartTube_stable_21.34_armeabi-v7a.apk` などでインストール。arm64 (v8)版ではなく32bit (v7) 版。
@@ -40,13 +36,19 @@ ja
 - `./gradlew installStorigDebug`
 - 最後に `./gradlew clean` して、`rm -rf ~/Library/Android/` して、Android Studioを消す。
 
-## 余談
+## en: Digression Notes
+
+- YTLite is the AltStore version for iPhone. https://github.com/dayanch96/YTLite/releases
+
+## ja: 余談
 
 - iPhoneのAltStore版は、YTLite。
 https://github.com/dayanch96/YTLite/releases
+  - 下記記事がわかりやすい。 https://note.com/tiyoko2525/n/n99ff7a725a0d
 
-下記記事がわかりやすい。
-https://note.com/tiyoko2525/n/n99ff7a725a0d
+---
+
+Original README.md below
 
 ---
 
