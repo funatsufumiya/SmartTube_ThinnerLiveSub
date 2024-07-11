@@ -17,7 +17,7 @@ ja
 - Install Android Studio
   - Install only Android SDK.
   - Contents of `local.properties`: `sdk.dir=~/Library/Android/sdk/`
-- Check the changes with `git diff master`.
+- Check the changes with `git diff master`. ( Also see: [Changes of this branch from original commit](https://github.com/funatsufumiya/SmartTube_ThinnerLiveSub/compare/135ed00..64ad48a) )
 - After reflecting the changes, copy png etc. with `git --no-pager diff --name-only`.
 - `export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-14.jdk/Contents/Home`
 - `./gradlew installStorigDebug`
@@ -30,7 +30,7 @@ ja
 - Android Studioをインストール
     - Android SDKだけをインストール。
     - `local.properties` の中身: `sdk.dir=~/Library/Android/sdk/`
-- `git diff master` で変更点を確認。
+- `git diff master` で変更点を確認。( 参考: [このブランチでの元コミットからの変更点](https://github.com/funatsufumiya/SmartTube_ThinnerLiveSub/compare/135ed00..64ad48a) )
 - 変更点を反映したら、`git --no-pager diff --name-only` で、png等をコピー
 - `export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-14.jdk/Contents/Home`
 - `./gradlew installStorigDebug`
